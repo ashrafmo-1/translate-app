@@ -7,6 +7,7 @@
     border: none;
     resize: none;
     list-style: none;
+    user-select: none;
 }
 
 :root {
@@ -70,6 +71,7 @@ h1{
     border-bottom-right-radius: 8px;
     border-top-right-radius: 8px;
     background-color: #002f4b;
+    cursor: no-drop;
 }
 
 .controls ul,
@@ -77,7 +79,7 @@ li{
     display: flex;
 }
 
-.controls ul{
+.controls ul {
     justify-content: space-between;
     align-items: center;
     gap: 50px;
@@ -94,6 +96,14 @@ i {
     background-color: #002f4b;
     border-radius: 50%;
     padding: 10px;
+    cursor: pointer;
+}
+
+.change {
+    color:#002033;
+    background-color: #fff;font-size: 22px;
+    padding: 10px;
+    border-radius: 50%;
     cursor: pointer;
 }
 
