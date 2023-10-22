@@ -6,6 +6,8 @@ let from = document.querySelector('#from-value')
 let to = document.querySelector('#to-value')
 // switch button
 let change = document.querySelector('.change')
+// icons buttons
+let icons = document.querySelectorAll('.icons i')
 
 select.forEach((ele, id) =>{
     for(let langName in language ) {
@@ -53,17 +55,16 @@ change.addEventListener('click', () => {
 })
 
 // copy text input
-
-let copy = document.querySelector('.copyTo')
-
-copy.addEventListener('ckick', () => {
-    from[0].select()
-    if (document.execCommand('copy')) {
-        alert('Text has been copied to clipboard: ' + from.value);
-    } else {
-        // Fallback for browsers that do not support the Clipboard API
-        alert('Sorry, copying to clipboard is not supported in your browser.');
-    }
-
-    window.getSelection().removeAllRanges();
+icons.forEach((ele) => {
+    ele.addEventListener("click", ({target}) => {
+        if(target.classList.contains('fa-copy')) {
+            if(target.id === 'From') {
+                navigator.clipboard.writeText(from.value)
+            }else {
+                navigator.clipboard.writeText(to.value)
+            }
+        }else{
+            console.log('volume from');
+        }
+    });
 })

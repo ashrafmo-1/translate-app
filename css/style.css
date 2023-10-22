@@ -91,7 +91,7 @@ li{
     font-size: 22px;
 }
 
-i {
+i, svg {
     color: rgb(255, 124, 0);
     background-color: #002f4b;
     border-radius: 50%;
@@ -111,7 +111,7 @@ select{
     width: 100px;
     height: 30px;
     font-size: 22px;
-    background: #888;
+    background: #ffffff;
     border-radius: 4px;
     color: orangered;
 }
@@ -123,4 +123,5 @@ button {
     font-size: 30px;
     font-weight: bold;
     border: 3px solid rgb(255, 124, 0);
+    cursor: pointer;
 }
