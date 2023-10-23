@@ -64,7 +64,15 @@ icons.forEach((ele) => {
                 navigator.clipboard.writeText(to.value)
             }
         }else{
-            console.log('volume from');
+            let speech;
+            if(target.id === 'From') {
+                speech = new SpeechSynthesisUtterance(from.value)
+                speech.lang = select[0].value
+            }else {
+                speech = new SpeechSynthesisUtterance(to.value)
+                speech.lang = select[1].value
+            }
+            speechSynthesis.speak(speech)
         }
     });
 })
