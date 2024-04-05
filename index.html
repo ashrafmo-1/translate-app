@@ -1,46 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>translator</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/all.min.css">
+  <meta charset="UTF-8">
+  <title>translator</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/all.min.css">
 </head>
 
 
 <body>
-    <div class="section-translte">
-        <h1>translator App</h1>
-        <div class="content">
-            <div class="inputs">
-                <textarea name="" id="from-value" cols="30" rows="10" placeholder="start typing"></textarea>
-                <textarea disabled name="" id="to-value" cols="30" rows="10" placeholder="result"></textarea>
+  <div class="section-translte">
+    <h1>translator App</h1>
+    <div class="content">
+      <div class="inputs">
+        <textarea name="" id="from-value" cols="30" rows="10" placeholder="start typing"></textarea>
+        <textarea disabled name="" id="to-value" cols="30" rows="10" placeholder="result"></textarea>
+      </div>
+      <div class="controls">
+        <ul>
+          <li class="typingUserControl">
+            <div class="icons">
+              <i id="From" class="fa-solid fa-volume-high"></i>
+              <i id="From" class="fa-solid fa-copy disblayNone"></i>
             </div>
-            <div class="controls">
-                <ul>
-                    <li>
-                        <div class="icons">
-                            <i id="From" class="fa-solid fa-volume-high"></i>
-                            <i id="From" class="fa-solid fa-copy"></i>
-                        </div>
-                        <select class="select" name="" id="" style="margin-left: 20px;">
-                        </select>
-                    </li>
-                    <li class="change"><i class="fa-solid fa-right-left"></i></li>
-                    <li>
-                        <select name="" id="" style="margin-right: 20px;">
-                        </select>
-                        <div class="icons">
-                            <i id="To" class="fa-solid fa-volume-high"></i>
-                            <i id="To" class="fa-solid fa-copy"></i>
-                        </div>
-                    </li>
-                </ul>
+            <select class="select" name="" id="" style="margin-left: 20px;">
+            </select>
+          </li>
+          <li class="change"><i class="fa-solid fa-right-left"></i></li>
+          <li>
+            <select name="" id="" style="margin-right: 20px;">
+            </select>
+            <div class="icons">
+              <i id="To" class="fa-solid fa-volume-high"></i>
+              <i id="To" class="fa-solid fa-copy disblayNone"></i>
             </div>
-            <button>translate</button>
-        </div>
+          </li>
+        </ul>
+      </div>
+      <button>translate</button>
     </div>
-    <script src="./js/language.js" ></script>
-    <script src="./js/main.js" ></script>
+  </div>
+  <script src="./js/language.js"></script>
+  <script src="./js/main.js"></script>
 </body>
+
 </html>
